@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/styles/style.css">
+        <link rel="stylesheet" href="assets/styles/cal.css">     
+        <link rel="stylesheet" href="assets/styles/pcal.css">
+        <link rel="stylesheet" href="assets/styles/tfor.css">
+        <link rel="stylesheet" href="assets/styles/tcon.css">
+        <link rel="stylesheet" href="assets/styles/sim.css">
+        <link rel="stylesheet" href="assets/styles/ticon.css">
+        <link rel="stylesheet" href="assets/styles/ptab.css">
+        <link rel="stylesheet" href="assets/styles/nv.css">
+        <link rel="stylesheet" href="assets/styles/qc.css">
+        <link rel="stylesheet" href="assets/styles/otm.css">
+        <link rel="stylesheet" href="assets/styles/loading.css">
+        <link rel="stylesheet" href="assets/styles/mlinks.css">
+        <title>The Collective</title>
+    </head>
+
+    <body class="loadBack" id="container">
+        <div class="active off">
+            <header>
+                <h1>The Collective</h1>
+            </header>
+    
+            <main>
+                <div data-modal-target="calculator"  class="cal-card">
+                   <div class="title-h"><h2>Calculator</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A simple calculator (click the background to exit the calculator).</p>
+                   </div>              
+                </div>
+                <div data-modal-target="pcal" class="cards">
+                    <div class="title-h"><h2>Percentage</h2>
+                    <h2 class="sh">Calculator</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A mini calculator that calculates the percentage of the number entered.</p>
+                   </div>                
+                </div>
+                <div data-modal-target="tfor" class="cards">
+                    <div class="title-h"><h2>Time </h2>
+                    <h2 class="sh">Formatter</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A formatter that formats the value enter to "days : hours : minutes : seconds".</p>
+                   </div>                 
+                </div>
+                <div data-modal-target="tcon" class="cards">
+                    <div class="title-h"><h2>Temperature </h2>
+                    <h2 class="sh">Converter</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A temperature converter that converts a value from celsius,centigrade,fahrenheit or kelvin to celsius,centigrade,fahrenheit or kelvin.</p>
+                   </div>          
+                </div>
+                <div data-modal-target="sim" class="cards">
+                    <div class="title-h"><h2>Simple Interest </h2>
+                    <h2 class="sh">Calculator</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A calculator that calculates simple interest,principal and amount.</p>
+                   </div>       
+                </div>
+                <div data-modal-target="ticon" class="cards">
+                    <div class="title-h"><h2>Time </h2>
+                    <h2 class="sh">Converter</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A time converter that can convert a particular time unit to seconds,minutes,hours or days.</p>
+                   </div>           
+                </div>
+                <div data-modal-target="ptab" class="cards">
+                    <div class="title-h"><h2>Periodic</h2>
+                    <h2 class="sh">Table</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A table that gets shows the full element name of the sign entered(Just for the first twenty(20) elements).</p>
+                   </div>
+                </div>
+                <div data-modal-target="nv" class="cards">
+                    <div class="title-h"><h2>Number</h2>
+                    <h2 class="sh">Validator</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>Just validates the phone number entered(Just for Nigerian numbers).</p>
+                   </div>          
+                </div>
+                <div data-modal-target="qc" class="cards">
+                    <div class="title-h"><h2>Quadratic</h2>
+                    <h2 class="sh">Calculator</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A calculator that calculates quadratic equations.</p>
+                   </div>          
+                </div>
+                <div data-modal-target="otm" class="cards">
+                    <div class="title-h"><h2>Others To</h2>
+                    <h2 class="sh">Metre</h2></div>
+                   <div class="main">
+                       <h3>Description:</h3>
+                       <p>A converter that converts a value from decimetre,centimetre,millimetre,</p><p>decametre,hectometre or kilometre to metre.</p>
+                   </div>          
+                </div>
+            </main>
+    
+            <footer>
+                <p>The Collective is a collection of a few of my personal mini projects,that i have written in other programming languges and i just decided to rewrite and put them on this single page website.
+                    <h3>Enjoy.</h3>
+                </p>
+                <a data-modal-target="about" class="mlinks">about</a>
+                <a data-modal-target="contact" class="mlinks">contact</a>
+            </footer>
+
+            <div class="modal" id="error">
+                <div class="m-header">
+                    <h2>Alert</h2>
+                    <div id="close-error">&times;</div>
+                </div>
+                <h3>Error</h3>
+            </div>
+
+            <div id="overlay"></div>
+
+            <div id="calculator">
+                <form action="#">
+                    <input type="text" id="result">
+                    <div class="btns">
+                        <span class="btn plus">+</span>
+                        <span class="btn minus">-</span>
+                        <span class="btn divide">/</span>         
+                        <span class="btn one">1</span>
+                        <span class="btn two">2</span>
+                        <span class="btn multiply">x</span>
+                        <span class="btn three">3</span>
+                        <span class="btn four">4</span>
+                        <span class="btn pow">^</span>
+                        <span class="btn five">5</span>
+                        <span class="btn six">6</span>
+                        <span class="btn dot">.</span>
+                        <span class="btn seven">7</span>
+                        <span class="btn eight">8</span>
+                        <span class="btn equal">=</span>
+                        <span class="btn nine">9</span>
+                        <span class="btn zero">0</span>
+                        <span class="btn del">Del</span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal" id="about">
+                <div>
+                    <span data-modal-target="about" class="close-btn">&#8592;</span>
+                </div>
+                <h3><p>Hi, my name is William Onyejiaka.This website was made so i could apply the skills i learnt after watching a few tutorials over these past few months and it was also made for fun because i enjoy programming.</p>
+               <p>I hope the users of this website will enjoy it and if you want to give me a feedback or a review of my website, my phone numbers(the first one is my whattapp number) are in the contact section,you can use my facebook account to contact me but i don't login often.</p>
+                </h3>
+            </div>
+
+            <div class="modal" id="contact">
+                <div>
+                    <span data-modal-target="contact" class="close-btn">&#8592;</span>
+                </div>
+                <dl>
+                    <dt>Name:</dt>
+                    <dd>William Onyejiaka</dd>
+                    <dt>Phone Numbers:</dt>
+                    <dd>09026405140</dd>
+                    <dd>08130915029</dd>
+                    <dt>Facebook Username:</dt>
+                    <dd>Liam Onyejiaka</dd>
+                    <dt>Email:</dt>
+                    <dd>williamonyejiaka08062528003</dd>
+                    <dd>@gmail.com</dd>
+                </dl>
+            </div>
+
+            <div class="modal" id="pcal">
+                <div class="m-header">
+                    <h2>Percentage Calculator</h2>
+                    <div data-modal-target="pcal" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>Enter a number</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-control">
+                        <label>Enter the percent</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-control">
+                        <label>Result</label>
+                        <input type="number">
+                    </div>
+                    <button id="pcalbtn">Calculate</button>
+                </form>
+            </div>
+
+            <div class="modal" id="tfor">
+                <div class="m-header">
+                    <h2>Time Formatter</h2>
+                    <div data-modal-target="tfor" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>Enter a Value</label>
+                        <input type="number">
+                        <select id="tforselect">
+                            <option>select unit</option>
+                            <option>day</option>
+                            <option>hour</option>
+                            <option>minute</option>
+                            <option>second</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Formatted Time</label>
+                        <input type="text" placeholder="00 days: 00 hrs : 00 mins : 00 s ">
+                    </div>
+                    <button id="tforbtn">Format</button>
+                </form>
+            </div>
+
+            <div class="modal" id="tcon">
+                <div class="m-header">
+                    <h2>Temperature Converter</h2>
+                    <div data-modal-target="tcon" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>From</label>
+                        <input type="number">
+                        <select id="tconselect">
+                            <option>Select unit</option>
+                            <option>Celsius</option>
+                            <option>Centigrade</option>
+                            <option>Fahrenheit</option>
+                            <option>Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>To</label>
+                        <input type="number">
+                        <select id="tconselect">
+                            <option>Select unit</option>
+                            <option>Celsius</option>
+                            <option>Centigrade</option>
+                            <option>Fahrenheit</option>
+                            <option>Kelvin</option>
+                        </select>
+                    </div>
+                    <button id="tconbtn">Convert</button>
+                </form>
+            </div>
+
+            <div class="modal" id="sim">
+                <div class="m-header">
+                    <h2>Simple Interest Calculator</h2>
+                    <div data-modal-target="sim" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="sim-control on" id="principal">
+                        <div class="form-control">
+                            <label>Enter Principal</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="sim-control on" id="rate">
+                        <div class="form-control">
+                            <label>Enter Rate</label>
+                            <input type="text">
+                        </div>   
+                    </div>
+                    <div class="sim-control on" id="time">
+                        <div class="form-control">
+                            <label>Enter Time</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="sim-control on" id="simpint">
+                        <div class="form-control">
+                            <label>Enter Simple Interest</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    
+                    <div class="form-control">
+                        <label>Result</label>
+                        <input type="text" id="simpresult">
+                        <select>
+                            <option>Select type</option>
+                            <option>Simple Interest</option>
+                            <option>Amount</option>
+                            <option>Principal</option>
+                        </select>
+                    </div>       
+                    <button id="simbtn">Calculate</button>
+                </form>
+            </div>
+
+            <div class="modal" id="ticon">
+                <div class="m-header">
+                    <h2>Time Converter</h2>
+                    <div data-modal-target="ticon" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>From</label>
+                        <input type="number">
+                        <select>
+                            <option>Select unit</option>
+                            <option>Seconds</option>
+                            <option>Minutes</option>
+                            <option>Hours</option>
+                            <option>Days</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>To</label>
+                        <input type="number">
+                        <select>
+                            <option>Select unit</option>
+                            <option>Seconds</option>
+                            <option>Minutes</option>
+                            <option>Hours</option>
+                            <option>Days</option>
+                        </select>
+                    </div>
+                    <button id="ticonbtn">Convert</button>
+                </form>
+            </div>
+
+            <div class="modal" id="ptab">
+                <div class="m-header">
+                    <h2>Periodic Table</h2>
+                    <div data-modal-target="ptab" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>Enter the element's sign</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-control">
+                        <label>Element</label>
+                        <input type="text">
+                    </div>
+                    <button id="ptabbtn">Show Element</button>
+                </form>
+            </div>
+
+            <div class="modal" id="nv">
+                <div class="m-header">
+                    <h2>Number Validator</h2>
+                    <div data-modal-target="nv" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>Enter the phone number</label>
+                        <input type="text">
+                    </div>
+                    <div class="form-control">
+                        <label>Result</label>
+                        <input type="text">
+                    </div>
+                    <button id="nvbtn">Validate</button>
+                </form>
+            </div>
+
+            <div class="modal" id="qc">
+                <div class="m-header">
+                    <h2>Quadratic Calculator</h2>
+                    <div data-modal-target="qc" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>Enter a</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-control">
+                        <label>Enter b</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-control">
+                        <label>Enter c</label>
+                        <input type="number">
+                    </div>
+                    <div class="form-control">
+                        <label>Result</label>
+                        <input type="text">
+                    </div>
+                    <button id="qcbtn">Calculate</button>
+                </form>
+            </div>
+
+            <div class="modal" id="otm">
+                <div class="m-header">
+                    <h2>Others To Metre</h2>
+                    <div data-modal-target="otm" class="close-btn">&times;</div>
+                </div>
+                <form action="#">
+                    <div class="form-control">
+                        <label>From</label>
+                        <input type="number">
+                        <select>
+                            <option>Select unit</option>
+                            <option>Decimetre</option>
+                            <option>Centimetre</option>
+                            <option>Millimetre</option>
+                            <option>Decametre</option>
+                            <option>Hectometre</option>
+                            <option>Kilometre</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label>Result</label>
+                        <input type="number">
+                    </div>
+                    <button id="otmbtn">Convert</button>
+                </form>
+            </div>
+
+            <div class="load active" id="welcome">
+                <span id="collective"><h1>The</h1><h1 id="first">Collective</h1></span>
+            </div>
+        </div>
+        <script type="module" src="assets/calculator.js"></script>
+        <script type="module" src="assets/script.js"></script>
+    </body>
+</html>

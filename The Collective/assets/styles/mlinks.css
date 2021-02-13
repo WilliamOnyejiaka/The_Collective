@@ -1,0 +1,22 @@
+
+#about,
+#contact {
+    width: 400px;
+    padding: 1%;
+}
+
+#contact dt{
+    margin: 2% 0;
+}
+
+#about.modal,
+#contact.modal {
+    max-width: 95%;
+    background-color: black;
+}
+
+.contact,
+.about {
+    background-color: rgb(247, 136, 96);
+}
+

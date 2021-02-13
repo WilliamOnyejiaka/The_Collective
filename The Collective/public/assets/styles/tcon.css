@@ -1,0 +1,90 @@
+
+
+.tcon {
+    background-color: rgb(52, 233, 52);
+}
+
+.cards[data-modal-target="tcon"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="tcon"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="tcon"] .main p{
+
+    font-size: 0.91rem;
+}
+
+
+[data-modal-target="tcon"]:hover{
+    color:  rgb(52, 233, 52);
+}
+
+[data-modal-target="tcon"].close-btn:hover {
+    color: white;
+}
+
+#tcon.modal {
+    background-color: rgb(96, 238, 96);
+    width: 330px;
+}
+
+#tcon .m-header {
+    background-color: rgb(96, 238, 96);
+    padding: 4% 0;
+    padding-right: 2%;
+}
+
+#tcon h2 {
+    padding: 4% ;
+}
+
+#tcon form {
+    padding: 3%;
+    background-color:  rgb(38, 230, 38);
+    color: black;
+}
+
+#tcon .form-control {
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#tcon label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#tcon input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#tcon select {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+#tconbtn {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(52, 233, 52);
+    border-radius: 5px;
+}

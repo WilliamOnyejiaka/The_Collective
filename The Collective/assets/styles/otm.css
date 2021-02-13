@@ -1,0 +1,90 @@
+
+
+.otm {
+    background-color: rgb(243, 26, 26);
+}
+
+.cards[data-modal-target="otm"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="otm"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="otm"] .main p{
+
+    font-size: 0.81rem;
+}
+
+
+[data-modal-target="otm"]:hover{
+    color:  rgb(243, 26, 26);
+}
+
+[data-modal-target="otm"].close-btn:hover {
+    color: white;
+}
+
+#otm.modal {
+    background-color: rgb(243, 26, 26);
+    width: 330px;
+}
+
+#otm .m-header {
+    background-color:rgb(236, 55, 55);
+    padding: 4% 0;
+    padding-right: 2%;
+}
+
+#otm h2 {
+    padding: 4% ;
+}
+
+#otm form {
+    padding: 3%;
+    background-color:  rgb(245, 17, 17);
+    color: black;
+}
+
+#otm .form-control {
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#otm label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#otm input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#otm select {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+#otmbtn {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(243, 26, 26);
+    border-radius: 5px;
+}

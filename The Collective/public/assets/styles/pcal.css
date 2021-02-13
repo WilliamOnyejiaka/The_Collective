@@ -1,0 +1,75 @@
+
+.pcal {
+    background-color: rgb(107, 157, 223);
+}
+
+.cards[data-modal-target="pcal"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="pcal"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="pcal"] .main {
+    font-size: 1.1rem;
+}
+
+[data-modal-target="pcal"]:hover{
+    color: rgb(107, 157, 223);
+}
+
+[data-modal-target="pcal"].close-btn:hover {
+    color: white;
+}
+
+#pcal.modal {
+    background-color:rgb(175, 175, 175);
+    width: 330px;
+}
+
+#pcal .m-header {
+    background-color: rgb(175, 175, 175);
+    padding: 2%;
+}
+
+#pcal h2 {
+    padding: 4% ;
+}
+
+#pcal form {
+    padding: 3%;
+    background-color: white;
+    color: black;
+}
+
+#pcal .form-control {
+    padding: 4%;
+    margin-left: 2%;
+}
+
+#pcal label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#pcal input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#pcalbtn {
+    color: rgb(99, 99, 99);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(216, 219, 221);
+    border-radius: 5px;
+}

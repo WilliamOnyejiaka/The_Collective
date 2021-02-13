@@ -1,0 +1,90 @@
+
+
+.ticon {
+    background-color: rgb(52, 227, 233);
+}
+
+.cards[data-modal-target="ticon"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="ticon"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="ticon"] .main p{
+
+    font-size: 0.91rem;
+}
+
+
+[data-modal-target="ticon"]:hover{
+    color: rgb(52, 227, 233);
+}
+
+[data-modal-target="ticon"].close-btn:hover {
+    color: white;
+}
+
+#ticon.modal {
+    background-color: rgb(52, 227, 233);
+    width: 330px;
+}
+
+#ticon .m-header {
+    background-color: rgb(111, 217, 221);
+    padding: 4% 0;
+    padding-right: 2%;
+}
+
+#ticon h2 {
+    padding: 4% ;
+}
+
+#ticon form {
+    padding: 3%;
+    background-color:  rgb(27, 221, 228);
+    color: black;
+}
+
+#ticon .form-control {
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#ticon label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#ticon input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#ticon select {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+#ticonbtn {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color:rgb(52, 227, 233);
+    border-radius: 5px;
+}

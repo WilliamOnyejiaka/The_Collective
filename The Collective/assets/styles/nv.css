@@ -1,0 +1,71 @@
+
+.nv {
+    background-color: rgb(146, 219, 77);
+}
+
+.cards[data-modal-target="nv"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="nv"] .title-h .sh {
+    margin-left: 8%;
+}
+
+[data-modal-target="nv"]:hover{
+    color:rgb(146, 219, 77);
+}
+
+[data-modal-target="nv"].close-btn:hover {
+    color: white;
+}
+
+#nv.modal {
+    background-color: rgb(146, 219, 77);
+    width: 330px;
+}
+
+#nv .m-header {
+    background-color: rgb(160, 216, 107);
+    padding: 2%;
+}
+
+#nv h2 {
+    padding: 4% ;
+}
+
+#nv form {
+    padding: 3%;
+    background-color: rgb(138, 218, 64);
+    color: black;
+}
+
+#nv .form-control {
+    padding: 6%;
+    margin-left: 2%;
+}
+
+#nv label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#nv input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#nvbtn {
+    color:white;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(146, 219, 77);
+    border-radius: 5px;
+}

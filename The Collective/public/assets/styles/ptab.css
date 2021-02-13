@@ -1,0 +1,71 @@
+
+.ptab {
+    background-color: rgb(223, 107, 194);
+}
+
+.cards[data-modal-target="ptab"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="ptab"] .title-h .sh {
+    margin-left: 8%;
+}
+
+[data-modal-target="ptab"]:hover{
+    color: rgb(223, 107, 194);
+}
+
+[data-modal-target="ptab"].close-btn:hover {
+    color: white;
+}
+
+#ptab.modal {
+    background-color: rgb(223, 107, 194);
+    width: 330px;
+}
+
+#ptab .m-header {
+    background-color:  rgb(219, 124, 195);
+    padding: 2%;
+}
+
+#ptab h2 {
+    padding: 4% ;
+}
+
+#ptab form {
+    padding: 3%;
+    background-color:  rgb(223, 94, 191);
+    color: black;
+}
+
+#ptab .form-control {
+    padding: 4%;
+    margin-left: 2%;
+}
+
+#ptab label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#ptab input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#ptabbtn {
+    color:white;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color:  rgb(223, 107, 194);
+    border-radius: 5px;
+}

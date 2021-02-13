@@ -1,0 +1,82 @@
+
+.tfor {
+    background-color: rgb(255, 68, 68);
+}
+
+.cards[data-modal-target="tfor"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="tfor"] .title-h .sh {
+    margin-left: 8%;
+}
+
+[data-modal-target="tfor"]:hover{
+    color: rgb(255, 68, 68);
+}
+
+[data-modal-target="tfor"].close-btn:hover {
+    color: white;
+}
+
+#tfor.modal {
+    background-color: rgb(255, 113, 113);
+    width: 330px;
+}
+
+#tfor .m-header {
+    background-color: rgb(255, 102, 102);
+    padding: 4%;
+}
+
+#tfor h2 {
+    padding: 4% ;
+}
+
+#tfor form {
+    padding: 3%;
+    background-color:  rgb(250, 76, 76);
+    color: black;
+}
+
+#tfor .form-control {
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#tfor label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#tfor input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#tfor select {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+#tforbtn {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color:rgb(255, 102, 102);
+    border-radius: 5px;
+}

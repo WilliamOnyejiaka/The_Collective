@@ -1,0 +1,94 @@
+
+
+.sim {
+    background-color: rgb(209, 43, 187);
+}
+
+.cards[data-modal-target="sim"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 20%;
+    margin: 0;
+}
+
+.cards[data-modal-target="sim"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="sim"] .main p{
+
+    font-size: 1.2rem;
+}
+
+
+[data-modal-target="sim"]:hover{
+    color:  rgb(238, 81, 217);
+}
+
+[data-modal-target="sim"].close-btn:hover {
+    color: white;
+}
+
+#sim.modal {
+    background-color: rgb(238, 81, 217);
+    width: 330px;
+}
+
+#sim .m-header {
+    background-color: rgb(238, 81, 217);
+    padding: 2% 0;
+    padding-right: 2%;
+}
+
+#sim h2 {
+    padding: 4% ;
+}
+
+#sim form {
+    padding: 3%;
+    background-color: rgb(201, 56, 181);
+    color: black;
+}
+
+#sim .form-control {
+    padding: 4%;
+    margin-left: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#sim label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#sim input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#sim select {
+    border: 1px solid black;
+    border-radius: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 0.9rem;
+    margin-top: 3%;
+}
+
+#simbtn {
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(209, 43, 187);
+    border-radius: 5px;
+}
+
+.sim-control.on {
+   display: none;
+}

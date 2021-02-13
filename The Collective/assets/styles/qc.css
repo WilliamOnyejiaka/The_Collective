@@ -1,0 +1,75 @@
+
+.qc {
+    background-color: rgb(219, 77, 96);
+}
+
+.cards[data-modal-target="qc"] .title-h h2 {
+    font-size: 1rem;
+    top: 8%;
+    left: 28%;
+    margin: 0;
+}
+
+.cards[data-modal-target="qc"] .title-h .sh {
+    margin-left: 8%;
+}
+
+.cards[data-modal-target="qc"] .main {
+    font-size: 1.1rem;
+}
+
+[data-modal-target="qc"]:hover{
+    color:rgb(219, 77, 96);
+}
+
+[data-modal-target="qc"].close-btn:hover {
+    color: white;
+}
+
+#qc.modal {
+    background-color: rgb(219, 77, 96);
+    width: 330px;
+}
+
+#qc .m-header {
+    background-color:rgb(218, 96, 112);
+    padding: 2%;
+}
+
+#qc h2 {
+    padding: 4% ;
+}
+
+#qc form {
+    padding: 3%;
+    background-color: rgb(221, 67, 88);
+    color: black;
+}
+
+#qc .form-control {
+    padding: 6%;
+    margin-left: 2%;
+}
+
+#qc label {
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#qc input{
+    display: block;
+    width: 90%;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+#qcbtn {
+    color:white;
+    width: 100%;
+    padding: 1%;
+    border: 1px solid white;
+    font-size: 100%;
+    background-color: rgb(219, 77, 96);
+    border-radius: 5px;
+}
